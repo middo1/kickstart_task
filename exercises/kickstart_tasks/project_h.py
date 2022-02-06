@@ -57,10 +57,29 @@ def blackbox(chars,favc):
         res += s
         i += 1
 
-    return [matrix,res]
+    return res
 
 
-print(blackbox('xyzabcdefghijklmnopqrstuvwxyz','ao'))
+no = int(input())
+
+t = []
+j = 0
+
+while no > 0:
+    t.append([])
+    char = input()
+    fav = input()
+    t[j].append(char)
+    t[j].append(fav)
+    j += 1
+    no -= 1
+
+j = 0
+
+for g in t:
+    print("#Case", j + 1)
+    print(blackbox(g[0],g[1]))
+    j += 1
 
 
 
