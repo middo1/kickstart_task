@@ -75,8 +75,7 @@ while no > 0:
 j = 0
 
 for g in t:
-    print("#Case", j + 1)
-    print(blackbox(g[0],g[1]))
+    print("Case #" + str(j + 1) , blackbox(g[0],g[1]))
     j += 1
 
 
