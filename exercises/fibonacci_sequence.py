@@ -5,6 +5,6 @@ def main():
     while len(seq) < nth_term:
         res = seq[len(seq) - 1] + seq[len(seq) - 2]
         seq.append(res)
-    print(res)
+    print(seq)
 
 main()
